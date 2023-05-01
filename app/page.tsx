@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Trending from './home/Trending';
+import Tech from './home/Tech';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -13,7 +14,7 @@ export default function Home() {
           className='
         basis-3/4'
         >
-          {/* <Tech /> */}
+          <Tech />
           {/* <Travel /> */}
           {/* <Other /> */}
           <div className='hidden md:block'>{/* <Subscribe /> */}</div>
