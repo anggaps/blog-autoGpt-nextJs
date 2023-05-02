@@ -3,6 +3,9 @@ import { Inter } from 'next/font/google';
 import Trending from './home/Trending';
 import Tech from './home/Tech';
 import Travel from './home/Travel';
+import Other from './home/Other';
+import Subscribe from './Components/Subscribe';
+import Sidebar from './Components/Sidebar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,10 +20,14 @@ export default function Home() {
         >
           <Tech />
           <Travel />
-          {/* <Other /> */}
-          <div className='hidden md:block'>{/* <Subscribe /> */}</div>
+          <Other />
+          <div className='hidden md:block'>
+            <Subscribe />
+          </div>
         </div>
-        <div className='basis-1/4'>{/* <Sidebar /> */}</div>
+        <div className='basis-1/4'>
+          <Sidebar />
+        </div>
       </div>
     </main>
   );
