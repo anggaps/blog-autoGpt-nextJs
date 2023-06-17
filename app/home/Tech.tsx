@@ -21,11 +21,11 @@ const Tech = ({ techPost }: Props) => {
 
       {/* flex
       <div className='flex justify-between items-center gap-5'>
-        <div className='bg-wh-500 h-96 basis-1/2'></div>
+        <div className=' h-96 basis-1/2'></div>
         <div className='flex flex-col gap-3 h-96 basis-1/2'>
-          <div className='bg-wh-500  basis-1/3'></div>
-          <div className='bg-wh-500  basis-1/3'></div>
-          <div className='bg-wh-500  basis-1/3'></div>
+          <div className='  basis-1/3'></div>
+          <div className='  basis-1/3'></div>
+          <div className='  basis-1/3'></div>
         </div>
       </div> */}
 
@@ -33,20 +33,20 @@ const Tech = ({ techPost }: Props) => {
       <div className='sm:grid grid-cols-2 grid-rows-3 gap-x-8 gap-y-8 my-5 '>
         {/* large card */}
         <Card
-          className='bg-wh-500 col-span-1 row-span-3'
+          className=' col-span-1 row-span-3'
           imageHeight={'h-96'}
           isLongForm
           post={techPost[0]}
         />
         {/* small card */}
         <Card
-          className='bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3'
+          className=' col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3'
           imageHeight={'h-48'}
           isSmallCard
           post={techPost[1]}
         />
         <Card
-          className='bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3'
+          className=' col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3'
           imageHeight={'h-48'}
           isSmallCard
           post={techPost[2]}
